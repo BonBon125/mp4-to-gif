@@ -2,7 +2,7 @@
 
 if [[ $# == 1 ]]; then
 	g++ main.cpp -o app
-	./app
+	./app $1
 else
 	echo "You need to supply a video file path"
 fi
