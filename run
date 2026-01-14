@@ -1,4 +1,8 @@
 #!/bin/bash
-g++ main.cpp -o app
 
-./app
+if [[ $# == 1 ]]; then
+	g++ main.cpp -o app
+	./app
+else
+	echo "You need to supply a video file path"
+fi
